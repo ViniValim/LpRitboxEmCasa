@@ -1,0 +1,46 @@
+.fourthSection{
+  padding: 64px 0px ;
+  margin-bottom: 30px;
+  .centro{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    .linhaAzul{
+      border-color: #5d18c4;
+      height: 2px;
+      width: 35%;
+      margin: 30px 0px 30px 0px;
+    }
+    .words{
+      h3{
+        text-align: center;
+        color: #f50b4d;
+        font-family: "Encode Sans",Sans-serif;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 1.2em;
+        letter-spacing: 0.06em;
+      }
+    }
+    .words2{
+      p{
+        font-size: 1.6rem;
+        line-height: 1.3;
+        font-weight: 400;
+        margin-bottom: 0.9rem;
+        text-align: center;
+      }
+    }
+  }
+  .imagem{
+    margin: 0;
+    padding: 0px 0px !important;
+
+    img{
+      padding: 0px 0px !important;
+      width: 100%;
+    }
+  }
+}
