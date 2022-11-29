@@ -1,13 +1,30 @@
-.third {
+.evani {
   padding: 0;
   background-color: black;
   position: relative;
+  .logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      display: block;
+      width: 100%;
+      fill: #FFF;
+  
+      &.inves {
+        margin-top: -76px;
+        transform: rotate(180deg);
+      }
+    }
+    span {
+      z-index: 2;
+      position: absolute;
+      color: white;
+      font-size: 2.8rem;
 
-  svg {
-    display: block;
-    width: 100%;
-    // transform: rotate(180deg);
-    fill: #FFF;
+      margin-top: 262px;
+    }
   }
   .container {
     display: flex;
@@ -16,12 +33,15 @@
     justify-content: center;
 
     .metodologia {
-      margin-top: -24px;
+      margin-top: -16px;
     }
 
     .content {
       display: flex;
+      align-items: center;
       gap: 30px;
+
+      margin-top: -82px;
 
       .left {
         h1 {
@@ -59,8 +79,9 @@
 
       .right {
         img {
-          width: 460px;
-          height: 550px;
+          width: 422px;
+          height: 590px;
+          object-fit: cover;
         }
       }
     }
