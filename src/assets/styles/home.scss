@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font-4;
 }
 
 :root {
@@ -36,4 +37,6 @@ body {
 
 @import './header.scss';
 @import './components/first';
+@import './components/second';
+@import './components/third';
 @import './components/descont1';

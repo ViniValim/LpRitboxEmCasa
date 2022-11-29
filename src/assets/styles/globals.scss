@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-4;
   line-height: 1.2;
   // letter-spacing: -0.6px;
   margin: 0;
@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-4;
   font-weight: bold;
 
   // @media (prefers-color-scheme: dark){
