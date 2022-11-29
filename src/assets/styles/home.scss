@@ -2,6 +2,7 @@
 @import './variables.scss';
 @import './commons.scss';
 @import './globals.scss';
+@import './footer.scss';
 
 * {
   margin: 0;
@@ -45,3 +46,4 @@ body {
 @import './components/evani';
 @import './components/faq';
 @import './components/sixthSection';
+@import './components/seventSection';
