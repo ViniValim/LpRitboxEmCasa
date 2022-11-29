@@ -1,0 +1,19 @@
+// importar reset css
+@import './variables.scss';
+@import './commons.scss';
+@import './globals.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+body {
+  background: #FFFFFF;
+}
+
+@import './header.scss';
