@@ -1,0 +1,50 @@
+.descont1 {
+  .botao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+    gap: 10px;
+    h3{
+      color: #000;
+      font-family: "Encode Sans",Sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    a{
+      background-image: linear-gradient(180deg,#00ff23 0,#00cd0d 100%);
+      border-radius: 180px;
+      padding: 24px 54px 20px 50px;
+  
+      font-family: "Encode Sans",Sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      line-height: 1.1em;
+      letter-spacing: 1.1px;
+      fill: #000;
+      color: #000;
+      width: 500px;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .icones{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 90px;
+    margin-top: 30px;
+
+    .box{
+      img{
+        width: 111px;
+        height: fit-content;
+      }
+    }
+  }
+}
