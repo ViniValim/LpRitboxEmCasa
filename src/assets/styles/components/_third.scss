@@ -22,6 +22,10 @@
     .content {
       display: flex;
       gap: 30px;
+      @media (max-width: $screen-xs) {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
 
       .left {
         h1 {
@@ -34,7 +38,15 @@
             color: #FFFF99;
           }
         }
-
+        .none{
+          margin: 0 auto;
+          display: none;
+          width: 460px;
+          height: 550px;
+          @media (max-width: $screen-xs) {
+            display: block;
+          }
+        }
         img {
           width: 100%;
           text-align: center;
@@ -50,6 +62,10 @@
           margin-bottom: 14px;
 
           width: 620px;
+          @media (max-width: $screen-xs) {
+            max-width: 100%;
+            width: 100%;
+          }
 
           span {
             color: #FFDA6F;
@@ -58,6 +74,9 @@
       }
 
       .right {
+        @media (max-width: $screen-xs) {
+          display: none;
+        }
         img {
           width: 460px;
           height: 550px;
@@ -68,6 +87,12 @@
     .rit {
       margin-top: -50px;
       margin-right: 550px;
+      @media (max-width: $screen-xs) {
+        display: block;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+      }
     }
   }
 }

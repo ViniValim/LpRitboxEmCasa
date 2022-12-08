@@ -57,14 +57,16 @@
   <section class="second">
     <div class="container">
       <h1>Basta seguir as aulas para <br> <strong>alcançar resultados como estes</strong></h1>
-      <button class="arrow-left" aria-label="previus" >PREVIOUS</button>
-      <button class="arrow-right" aria-label="next" >NEXT</button>
+      <!-- <button class="arrow-left" aria-label="previus" >PREVIOUS</button>
+      <button class="arrow-right" aria-label="next" >NEXT</button> -->
       <div class="flow">
         <div class="carrosel" id="img">
           <img src="/dist/assets/images/2.png" alt="">
           <img src="/dist/assets/images/7.png" alt="">
           <img src="/dist/assets/images/11.png" alt="">
-          <img src="/dist/assets/images/15.png" alt="">
+          <img src="/dist/assets/images/18.png" alt="">
+          <img src="/dist/assets/images/21.png" alt="">
+          <img src="/dist/assets/images/7.png" alt="">
         </div>
       </div>
       <p>Os depoimentos acima são de experiências pessoas de cada usuário e não é garantido que você poderá obter os mesmos resultados. Como qualquer outro programa de exercícios, você assume certos riscos para a saúde e segurança utilizando o RITBOX EM CASA.</p>
@@ -75,6 +77,7 @@
     const imgs = document.getElementById("img")
     const img = document.querySelectorAll("#img img")
 
+
     let idx =0;
 
     function carrosel(){
@@ -82,7 +85,7 @@
       if (idx > img.length - 2){
         idx =0;
       }
-      imgs.style.transform = `translateX(${-idx * 530}px)`;
+      imgs.style.transform = `translateX(${-idx * 540}px)`;
 
     }
     setInterval(carrosel, 2800);
@@ -98,6 +101,8 @@
         <div class="left">
           <h1>1 ano de <span>resultado em 2 meses</span><br>se divertindo em casa</h1>
           <img src="/dist/assets/images/24.png" alt="">
+          <img class="none" src="/dist/assets/images/26.png" alt="">
+
           <p><span>RIT</span> é o Ritmo necessário que um treino precisa ter para você acelera a sua queima de gordura, usando a música + treino para deixar o seu processo de emagrecimento mais divertido</p>
           <p><span>BOX</span> é a caixa que possui todos os métodos que acelera o seu metabolismo, um desses métodos é o HIIT que acelera a sua queima de gordura por até 48H após o treino.</p>
           <p>Treinando ritbox você coloca o seu corpo no MODO EMAGRECIMENTO porque aumenta a produção de mitocôndrias que é a organela responsável pela queima de gordura e pela produção de energia acelerada.</p>
@@ -246,7 +251,7 @@
           <div class="box">
             <img src="/dist/assets/images/34.png" alt="">
           </div>
-          <div class="box">
+          <div class="box meio">
             <img src="/dist/assets/images/38.png" alt="">
           </div>
         </div>
@@ -507,18 +512,50 @@
   <section class="seventSection">
     <div class="container">
       <h1>Basta seguir as aulas para <br> <strong>alcançar resultados como estes</strong></h1>
+      <div class="flow">
+        <div class="carrosel" id="imgy">
+          <img src="/dist/assets/images/2.png" alt="">
+          <img src="/dist/assets/images/7.png" alt="">
+          <img src="/dist/assets/images/11.png" alt="">
+          <img src="/dist/assets/images/18.png" alt="">
+          <img src="/dist/assets/images/21.png" alt="">
+          <img src="/dist/assets/images/7.png" alt="">
+          <img src="/dist/assets/images/2.png" alt="">
+          <img src="/dist/assets/images/7.png" alt="">
+          <img src="/dist/assets/images/11.png" alt="">
+          <img src="/dist/assets/images/18.png" alt="">
+          <img src="/dist/assets/images/21.png" alt="">
+          <img src="/dist/assets/images/7.png" alt="">
+          <img src="/dist/assets/images/2.png" alt="">
+          <img src="/dist/assets/images/7.png" alt="">
+          <img src="/dist/assets/images/11.png" alt="">
+          <img src="/dist/assets/images/18.png" alt="">
+          <img src="/dist/assets/images/21.png" alt="">
+          <img src="/dist/assets/images/7.png" alt="">
 
-      <div class="carrosel">
-        <img src="/dist/assets/images/2.png" alt="">
-        <img src="/dist/assets/images/7.png" alt="">
-        <img src="/dist/assets/images/11.png" alt="">
+        </div>
       </div>
       <p>Os depoimentos acima são de experiências pessoas de cada usuário e não é garantido que você poderá obter os mesmos resultados.</p>
       <p>Como qualquer outro programa de exercícios, você assume certos riscos para a saúde e segurança utilizando o RITBOX EM CASA.</p>
 
     </div>
   </section>
+  <script>
+    const imgsy = document.getElementById("imgy")
+    const imgy = document.querySelectorAll("#imgy img")
 
+    let idy =0;
+
+    function carrosel1(){
+      idy++;
+      if (idy > imgy.length - 5){
+        idy =0;
+      }
+      imgsy.style.transform = `translateX(${-idy * 730}px)`;
+
+    }
+    setInterval(carrosel1, 3800);
+  </script>
   <section class="descont1">
     <div class="container">
       <div class="botao">

@@ -7,6 +7,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
+    justify-content: center;
     .words{
       margin-bottom: 35px;
       .title{
@@ -39,6 +40,17 @@
       justify-content: center;
       justify-items: center;
       grid-template-columns: 250px 250px 250px;
+      @media (max-width: $screen-xs) {
+          grid-template-columns: 200px 200px;
+      }
+      .box{
+        &.meio{
+          @media (max-width: $screen-xs) {
+            display: grid;
+            grid-template-columns: 200px;
+        }
+        }
+      }
     }
     .words2{
       text-align: center;

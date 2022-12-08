@@ -37,12 +37,17 @@
     }
 
     .content {
-      display: flex;
+      display: grid;
+      grid-template-columns: 700px 700px;
       align-items: center;
-      gap: 30px;
+      justify-content: center;
+      position: relative;
+      gap: 40px;
 
       margin-top: -82px;
-
+     @media (max-width: $screen-xs) {
+      grid-template-columns: 1fr;
+     }
       .left {
         h1 {
           text-align: center;

@@ -1,4 +1,6 @@
 .descont1 {
+  width: 100%;
+  max-width: 100%;
   .botao {
     display: flex;
     flex-direction: column;
@@ -33,6 +35,8 @@
     }
   }
   .icones{
+    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     justify-items: center;
