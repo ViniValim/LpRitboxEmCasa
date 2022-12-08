@@ -56,16 +56,36 @@
   <section class="second">
     <div class="container">
       <h1>Basta seguir as aulas para <br> <strong>alcançar resultados como estes</strong></h1>
-
-      <div class="carrosel">
-        <img src="/dist/assets/images/2.png" alt="">
-        <img src="/dist/assets/images/7.png" alt="">
-        <img src="/dist/assets/images/11.png" alt="">
+      <button class="arrow-left" aria-label="previus" >PREVIOUS</button>
+      <button class="arrow-right" aria-label="next" >NEXT</button>
+      <div class="flow">
+        <div class="carrosel" id="img">
+          <img src="/dist/assets/images/2.png" alt="">
+          <img src="/dist/assets/images/7.png" alt="">
+          <img src="/dist/assets/images/11.png" alt="">
+          <img src="/dist/assets/images/15.png" alt="">
+        </div>
       </div>
       <p>Os depoimentos acima são de experiências pessoas de cada usuário e não é garantido que você poderá obter os mesmos resultados. Como qualquer outro programa de exercícios, você assume certos riscos para a saúde e segurança utilizando o RITBOX EM CASA.</p>
 
     </div>
   </section>
+  <script>
+    const imgs = document.getElementById("img")
+    const img = document.querySelectorAll("#img img")
+
+    let idx =0;
+
+    function carrosel(){
+      idx++;
+      if (idx > img.length - 2){
+        idx =0;
+      }
+      imgs.style.transform = `translateX(${-idx * 530}px)`;
+
+    }
+    setInterval(carrosel, 2800);
+  </script>
 
   <section class="third">
     <svg>
