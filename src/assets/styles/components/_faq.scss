@@ -46,6 +46,7 @@
     h1 {
       font-size: 6rem;
       color: #ffd975;
+      margin-bottom: 20px;
     }
 
     .questions {
@@ -57,29 +58,46 @@
       margin-bottom: 150px;
 
       .question {
-        display: flex;
-        align-items: center;
-        padding: 20px;
-        width: inherit;
-        height: 64px;
         background-color: #6d11c8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: inherit;
+        height: fit-content;
         border-radius: 11px;
-
+        padding: 12px 0;
+        transition: 1s;
+        
+        &.rozinha {
+          background-color: #fe4596 !important;
+        }
+        
         p {
+          text-align: left;
+          padding: 10px 20px;
           font-size: 1.6rem;
           color: white;
 
         }
 
-        .textDropdown {
-          width: 490px;
-          border-color: lightblue;
-          border-style: solid;
-          border-width: 10px;
-          border-top-width: 1px;
-          border-bottom-width: 1px;
-          border-radius: 10px;
-          background-color: lightblue;
+        .textSection {
+          transition: 3s;
+          display: none;
+          background-color: white;
+          width: 100%;
+          border-radius: 0 0 11px 11px;
+          padding: 0;
+
+          p {
+            transition: inherit;
+            display: inherit;
+            color: #000;
+
+            &:nth-last-child() {
+              padding-bottom: 30px;
+            }
+          }
         }
       }
     }
