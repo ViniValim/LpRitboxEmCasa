@@ -2,14 +2,17 @@
   background: #000;
   padding-top: 32px;
   padding-bottom: 400px;
+  
   .centro{
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
     justify-content: center;
+  
     .words{
       margin-bottom: 35px;
+  
       .title{
         text-align: center;
         h2{
@@ -21,6 +24,7 @@
           margin-top: 10px;
         }
       }
+  
       .paragrafo{
         text-align: center;
         margin-top: 15px;
@@ -34,27 +38,39 @@
         }
       }
     }
+  
     .images{
       display: grid;
       align-items: center;
       justify-content: center;
       justify-items: center;
       grid-template-columns: 250px 250px 250px;
+      
       @media (max-width: $screen-xs) {
-          grid-template-columns: 200px 200px;
+        grid-template-columns: 1fr 1fr;
       }
+
       .box{
+        img {
+          width: 100%;
+        }
+        
         &.meio{
           @media (max-width: $screen-xs) {
             display: grid;
-            grid-template-columns: 200px;
-        }
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 6;
+            grid-row-end: 6;
+          }
         }
       }
     }
+    
     .words2{
       text-align: center;
       margin-top: 10px;
+    
       .title{
         h2{
           color: #fff;
@@ -64,19 +80,22 @@
           margin-bottom: 30px;
         }
       }
-      p{
+
+      p {
         color: #fff;
         font-family: "Encode Sans",Sans-serif;
         font-weight: 400;
         font-size: 16px;
       }
     }
+
     .image2{
       display: flex;
       justify-content: center;
       align-items: center;
       justify-items: center;
     }
+
     .words3{
       display: flex;
       flex-direction: column;
@@ -87,6 +106,7 @@
       margin-top: 20px;
       width: 760px;
       margin-bottom: 30px;
+    
       p{
         color: #fff;
         font-family: "Encode Sans",Sans-serif;
@@ -99,6 +119,7 @@
         }
       }
     }
+
     .words4{
       display: flex;
       flex-direction: column;
@@ -107,6 +128,7 @@
       align-items: center;
       text-align: center;
       margin-top: 25px;
+    
       h2{
         color: #fff;
         font-family: "Encode Sans",Sans-serif;
@@ -123,12 +145,14 @@
         }
       }
     }
+    
     .linhaAmarela{
       margin-top: 25px;
       border: 2px solid;
       color: #ffd975;
       width: 460px;
     }
+    
     .words5{
       display: flex;
       flex-direction: column;
@@ -139,6 +163,7 @@
       margin-top: 20px;
       width: 760px;
       margin-bottom: 30px;
+    
       p{
         color: #fff;
         font-family: "Encode Sans",Sans-serif;
