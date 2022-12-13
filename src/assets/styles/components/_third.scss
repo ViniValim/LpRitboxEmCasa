@@ -18,21 +18,34 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    
     .metodologia {
       margin-top: -24px;
+
+      @media (max-width: $screen-md) {
+        margin-top: unset;
+      }
+      
+      @media (max-width: $screen-xs) {
+        width: 61%;
+      }
     }
 
     .content {
+      
       display: flex;
       gap: 30px;
       @media (max-width: $screen-md) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
       }
 
       .left {
+        @media (max-width: $screen-xs) {
+          width: 100%;
+        }
         h1 {
           text-align: center;
           color: white;
@@ -41,6 +54,10 @@
           margin-bottom: 20px;
           span {
             color: #FFFF99;
+          }
+
+          @media (max-width: $screen-xs) {
+            font-size: 2.1rem;
           }
         }
 
@@ -53,13 +70,23 @@
           @media (max-width: $screen-md) {
             display: block;
           }
+
+          @media (max-width: $screen-xs) {
+            width: 100%;
+            height: fit-content;
+          }
         }
         
         img {
-          width: 100%;
           text-align: center;
           width: 620px;
           height: 90px;
+
+          @media (max-width: $screen-md) {
+            width: 100% !important;
+            height: fit-content;
+            object-fit: contain;
+          }
         }
 
         p {
@@ -70,9 +97,14 @@
           margin-bottom: 14px;
 
           width: 620px;
+          @media (max-width: $screen-md) {
+            margin: 0 auto 14px;
+          } 
+
           @media (max-width: $screen-xs) {
             max-width: 100%;
             width: 100%;
+            margin: 0 auto;
           }
 
           span {
@@ -95,11 +127,15 @@
     .rit {
       margin-top: -50px;
       margin-right: 550px;
-      @media (max-width: $screen-xs) {
+      @media (max-width: $screen-md) {
         display: block;
         align-items: center;
         justify-items: center;
         margin: 0 auto;
+      }
+
+      @media (max-width: $screen-xs) {
+        width: 61%;
       }
     }
   }
