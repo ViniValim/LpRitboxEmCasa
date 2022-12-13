@@ -40,14 +40,25 @@
       justify-content: center;
       justify-items: center;
       grid-template-columns: 250px 250px 250px;
+      
       @media (max-width: $screen-xs) {
-          grid-template-columns: 200px 200px;
+        grid-template-columns: 1fr 1fr;
+        
       }
+
       .box{
+
+        img {
+          width: 100%;
+        }
+        
         &.meio{
           @media (max-width: $screen-xs) {
             display: grid;
-            grid-template-columns: 200px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 6;
+            grid-row-end: 6;
         }
         }
       }
