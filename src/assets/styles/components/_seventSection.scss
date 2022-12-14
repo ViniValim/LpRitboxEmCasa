@@ -50,19 +50,19 @@
 
         // .navigattion-auto{
         // }
-        #radios1:checked ~ .first-slide{
+        #radios1:checked ~ .first-slides{
           margin-left: 0;
         }
-        #radios2:checked ~ .first-slide{
+        #radios2:checked ~ .first-slides{
           margin-left: -100%;
         }
-        #radios3:checked ~ .first-slide{
+        #radios3:checked ~ .first-slides{
           margin-left: -200%;
         }
-        #radios4:checked ~ .first-slide{
+        #radios4:checked ~ .first-slides{
           margin-left: -300%;
         }
-        #radios5:checked ~ .first-slide{
+        #radios5:checked ~ .first-slides{
           margin-left: -400%;
         }
 
@@ -115,7 +115,7 @@
         @media (max-width: $screen-xs) {
           display: none;
         }
-        .manual-btn{
+        .manual-btns{
           border: 2px solid #f50b4d;
           padding: 5px;
           border-radius: 10px;
