@@ -24,6 +24,9 @@
         margin-bottom: 20px;
         width: 100%;
         overflow: hidden;
+        @media (max-width: $screen-xs) {
+          height: 311px;
+        }
         input{
           display: none;
         }

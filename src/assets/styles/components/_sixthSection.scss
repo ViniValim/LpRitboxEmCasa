@@ -9,6 +9,21 @@
     justify-items: center;
     align-items: center;
     justify-content: center;
+    @media (max-width: $screen-xs) {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin: 20px;
+    }
+
+    .image4{
+      .box{
+        img{
+          @media (max-width: $screen-xs) {
+            width: 311px;
+          }
+        }
+      }
+    }
 
     .words {
       margin-bottom: 35px;
@@ -51,6 +66,7 @@
 
       @media (max-width: $screen-xs) {
         grid-template-columns: 1fr 1fr;
+        margin: 20px;
       }
 
 
@@ -74,6 +90,10 @@
     .words2 {
       text-align: center;
       margin-top: 10px;
+      @media (max-width: $screen-xs) {
+        width: 275px;
+        max-width: 100%;
+      }
 
       .title {
         h2 {
@@ -120,6 +140,10 @@
       margin-top: 20px;
       width: 760px;
       margin-bottom: 30px;
+      @media (max-width: $screen-xs) {
+        width: 300px;
+        max-width: 100%;
+      }
 
       p {
         color: #fff;
@@ -143,6 +167,10 @@
       align-items: center;
       text-align: center;
       margin-top: 25px;
+      @media (max-width: $screen-xs) {
+        width: 300px;
+        max-width: 100%;
+      }
 
       h2 {
         color: #fff;
@@ -178,6 +206,10 @@
       margin-top: 20px;
       width: 760px;
       margin-bottom: 30px;
+      @media (max-width: $screen-xs) {
+        width: 300px;
+        max-width: 100%;
+      }
 
       p {
         color: #fff;
