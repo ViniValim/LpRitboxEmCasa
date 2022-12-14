@@ -120,25 +120,25 @@
 
     </div>
   </section>
-  <!-- <script>
-    const imgs = document.getElementById("img")
-    const img = document.querySelectorAll("#img img")
+  <script>
+    let count = 1;
+document.getElementById("radio1").checked = true;
 
+setInterval(function (){
+    nextImage();
+}, 2000)
 
-    let idx = 0;
-
-    function carrosel() {
-      idx++;
-      if (idx > img.length - 2) {
-        idx = 0;
-      }
-      imgs.style.transform = `translateX(${-idx * 540}px)`;
-
+function nextImage(){
+    count++;
+    if(count>5){
+        count = 1;
     }
-    setInterval(carrosel, 2800);
-  </script> -->
+document.getElementById("radio"+count).checked = true;
 
-  <!-- <section class="third">
+}
+  </script>
+
+  <section class="third">
     <svg>
       <use xlink:href="dist/assets/svg/sprite.svg#patter1"></use>
     </svg>
@@ -380,7 +380,7 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <section class="evani">
     <div class="logo">
@@ -592,56 +592,74 @@
     </div>
   </section>
 
-  <!-- <section class="seventSection">
+  <section class="seventSection">
     <div class="container">
       <h1>Basta seguir as aulas para <br> <strong>alcançar resultados como estes</strong></h1>
+      <!-- <button class="arrow-left" aria-label="previus" >PREVIOUS</button>
+      <button class="arrow-right" aria-label="next" >NEXT</button> -->
       <div class="flow">
-        <div class="carrosel" id="imgy">
-          <img src="/dist/assets/images/2.png" alt="">
-          <img src="/dist/assets/images/7.png" alt="">
-          <img src="/dist/assets/images/11.png" alt="">
-          <img src="/dist/assets/images/18.png" alt="">
-          <img src="/dist/assets/images/21.png" alt="">
-          <img src="/dist/assets/images/7.png" alt="">
-          <img src="/dist/assets/images/2.png" alt="">
-          <img src="/dist/assets/images/7.png" alt="">
-          <img src="/dist/assets/images/11.png" alt="">
-          <img src="/dist/assets/images/18.png" alt="">
-          <img src="/dist/assets/images/21.png" alt="">
-          <img src="/dist/assets/images/7.png" alt="">
-          <img src="/dist/assets/images/2.png" alt="">
-          <img src="/dist/assets/images/7.png" alt="">
-          <img src="/dist/assets/images/11.png" alt="">
-          <img src="/dist/assets/images/18.png" alt="">
-          <img src="/dist/assets/images/21.png" alt="">
-          <img src="/dist/assets/images/7.png" alt="">
-
+        <div class="carrosel" id="img">
+          <!--Radio Buttons-->
+          <input type="radio" name="radio-btn" id="radios1">
+          <input type="radio" name="radio-btn" id="radios2">
+          <input type="radio" name="radio-btn" id="radios3">
+          <input type="radio" name="radio-btn" id="radios4">
+          <input type="radio" name="radio-btn" id="radios5">
+          <!--Radio Buttons-->
+          <div class="slide first-slide">
+            <img src="/dist/assets/images/2.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="/dist/assets/images/7.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="/dist/assets/images/11.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="/dist/assets/images/18.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="/dist/assets/images/21.png" alt="">
+          </div>
+          <div class="navigation-auto">
+            <div class="autos-btn1"></div>
+            <div class="autos-btn2"></div>
+            <div class="autos-btn3"></div>
+            <div class="autos-btn4"></div>
+            <div class="autos-btn5"></div>
+          </div>
+        </div>
+        <div class="manual-navigation">
+          <label for="radios1" class="manual-btn"></label>
+          <label for="radios2" class="manual-btn"></label>
+          <label for="radios3" class="manual-btn"></label>
+          <label for="radios4" class="manual-btn"></label>
+          <label for="radios5" class="manual-btn"></label>
         </div>
       </div>
       <p>Os depoimentos acima são de experiências pessoas de cada usuário e não é garantido que você poderá obter os
-        mesmos resultados.</p>
-      <p>Como qualquer outro programa de exercícios, você assume certos riscos para a saúde e segurança utilizando o
-        RITBOX EM CASA.</p>
-
+        mesmos resultados. Como qualquer outro programa de exercícios, você assume certos riscos para a saúde e
+        segurança utilizando o RITBOX EM CASA.</p>
     </div>
-  </section> -->
-  <script>
-    const imgsy = document.getElementById("imgy")
-    const imgy = document.querySelectorAll("#imgy img")
+  </section>
+  <!-- <script>
+    let counts = 1
+document.getElementById("radios1").checked = true;
 
-    let idy = 0;
+setInterval(function (){
+    nextImages();
+}, 2000)
 
-    function carrosel1() {
-      idy++;
-      if (idy > imgy.length - 12) {
-        idy = 0;
-      }
-      imgsy.style.transform = `translateX(${-idy * 730}px)`;
-
+function nextImages(){
+    counts++;
+    if(counts>5){
+        counts = 1;
     }
-    setInterval(carrosel1, 3800);
-  </script>
-  <!-- <section class="descont1">
+document.getElementById("radios"+counts).checked = true;
+
+}
+  </script> -->
+  <section class="descont1">
     <div class="container">
       <div class="botao">
         <h3>Acesso anual por apenas 12x R$ 15,35</h3>
@@ -699,7 +717,7 @@
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
   <script>
     function changeStuff(event) {

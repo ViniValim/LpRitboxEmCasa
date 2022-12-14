@@ -16,27 +16,124 @@
     }
     
     .flow{
-      overflow-x: hidden;
-      flex-flow: row nowrap;
-      transition: transform 0.5s ease-in-out;
-      transform: translateX(0);
-
       .carrosel {
+        position: relative;
+        height: 540px;
         display: flex;
-        max-width: 1060px;
+        max-width: 520px;
         margin-bottom: 20px;
         width: 100%;
-        flex-flow: row nowrap;
-        transition: transform 0.5s ease-in-out;
-        transform: translateX(0);
-  
-        img {
-          width: 297px;
-          height: 300px;
-          object-fit: cover;
+        overflow: hidden;
+        input{
+          display: none;
+        }
+        @media (max-width: $screen-xs) {
+          display: flex;
+          max-width: 300px;
+        }
+        .slide{
+          position: relative;
+          // &.first-slide{
+          // }
+          img {
+            width: 530px;
+            height: 535px;
+            object-fit: cover;
+            @media (max-width: $screen-xs) {
+              width: 300px;
+              height: fit-content;
+            }
+          }
+        }
+
+
+
+        // .navigattion-auto{
+        // }
+        #radios1:checked ~ .first-slide{
+          margin-left: 0;
+        }
+        #radios2:checked ~ .first-slide{
+          margin-left: -100%;
+        }
+        #radios3:checked ~ .first-slide{
+          margin-left: -200%;
+        }
+        #radios4:checked ~ .first-slide{
+          margin-left: -300%;
+        }
+        #radios5:checked ~ .first-slide{
+          margin-left: -400%;
+        }
+
+        .navigation-auto div{
+          border: 2px solid #f50b4d;
+          padding: 5px;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: 1s;
+                          
+          @media (max-width: $screen-xs) {
+            display: none;
+          }
+        }
+        .navigation-auto{
+          position: absolute;
+          width: 530px;
+          top: 32px;
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          @media (max-width: $screen-xs) {
+            display: none;
+          }
+
+        }
+        #radios1:checked ~ .navigation-auto .autos-btn1{
+          background-color: yellow;
+        }
+        #radios2:checked ~ .navigation-auto .autos-btn2{
+          background-color: yellow;
+        }
+        #radios3:checked ~ .navigation-auto .autos-btn3{
+          background-color: yellow;
+        }
+        #radios4:checked ~ .navigation-auto .autos-btn4{
+          background-color: yellow;
+        }
+        #radios5:checked ~ .navigation-auto .autos-btn5{
+          background-color: yellow;
+        }
+      }
+      .manual-navigation{
+        position: absolute;
+        width: 530px;
+        top: 160px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        @media (max-width: $screen-xs) {
+          display: none;
+        }
+        .manual-btn{
+          border: 2px solid #f50b4d;
+          padding: 5px;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: 1s;
+          @media (max-width: $screen-xs) {
+            display: none;
+          }
+          :hover{
+            background-color: yellow;
+          }
+        }
+        .manual-btn:hover{
+          background-color: yellow;
         }
       }
     }
+
 
     p {
       color: #7a7a7a;

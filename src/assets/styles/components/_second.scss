@@ -87,6 +87,18 @@
         #radio1:checked ~ .navigation-auto .auto-btn1{
           background-color: yellow;
         }
+        #radio2:checked ~ .navigation-auto .auto-btn2{
+          background-color: yellow;
+        }
+        #radio3:checked ~ .navigation-auto .auto-btn3{
+          background-color: yellow;
+        }
+        #radio4:checked ~ .navigation-auto .auto-btn4{
+          background-color: yellow;
+        }
+        #radio5:checked ~ .navigation-auto .auto-btn5{
+          background-color: yellow;
+        }
       }
       .manual-navigation{
         position: absolute;
