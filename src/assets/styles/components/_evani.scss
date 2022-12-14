@@ -2,97 +2,161 @@
   padding: 0;
   background-color: black;
   position: relative;
+
   .logo {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+
     svg {
       display: block;
       width: 100%;
       fill: #FFF;
-  
+
+      @media (max-width: $screen-sm) {
+        height: 50px;
+      }
+
       &.inves {
         margin-top: -76px;
         transform: rotate(180deg);
+
+        @media (max-width: $screen-sm) {
+          margin-top: -28px;
+        }
       }
     }
-    span {
-      z-index: 2;
-      position: absolute;
-      color: white;
-      font-size: 2.8rem;
 
-      margin-top: 262px;
-    }
   }
-  .container {
-    display: flex;
-    flex-direction: column;
+}
+
+span {
+  z-index: 2;
+  position: absolute;
+  color: white;
+  font-size: 2.8rem;
+
+  margin-top: 262px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .evani-logo {
+    margin-top: -16px;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 700px 700px;
     align-items: center;
     justify-content: center;
+    gap: 40px;
 
-    .metodologia {
-      margin-top: -16px;
+    margin-top: -82px;
+
+    @media (max-width: 1000px) {
+      grid-template-columns: 1fr;
+      margin-top: unset;
+      margin: 0 auto;
     }
 
-    .content {
-      display: grid;
-      grid-template-columns: 700px 700px;
-      align-items: center;
-      justify-content: center;
-      gap: 40px;
+    @media (max-width: $screen-sm) {
+      .right {
+        order: 1;
+      }
 
-      margin-top: -82px;
-     @media (max-width: $screen-xs) {
-      grid-template-columns: 1fr;
-     }
       .left {
-        h1 {
-          text-align: center;
-          color: white;
-          text-transform: uppercase;
-          font-size: 3.6rem;
-          margin-bottom: 20px;
-          span {
-            color: #FFFF99;
-          }
-        }
+        order: 2;
+      }
+    }
 
-        img {
+    .left {
+      h1 {
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 3.6rem;
+        margin-bottom: 20px;
+
+        span {
+          color: #FFFF99;
+        }
+      }
+
+      img {
+        width: 100%;
+        text-align: center;
+        width: 620px;
+        height: 90px;
+      }
+
+      p {
+        color: white;
+        font-size: 1.9rem;
+        font-weight: 600;
+        line-height: 1.4;
+        margin-bottom: 14px;
+
+        width: 620px;
+
+        @media (max-width: 1000px) {
           width: 100%;
           text-align: center;
-          width: 620px;
-          height: 90px;
         }
 
-        p {
-          color: white;
-          font-size: 1.9rem;
-          font-weight: 600;
-          line-height: 1.4;
-          margin-bottom: 14px;
-
-          width: 620px;
-
-          span {
-            color: #FFDA6F;
-          }
-        }
-      }
-
-      .right {
-        img {
-          width: 422px;
-          height: 590px;
-          object-fit: cover;
+        span {
+          color: #FFDA6F;
         }
       }
     }
 
-    .rit {
-      margin-top: -50px;
-      margin-right: 550px;
+    .right {
+
+      @media (max-width: 1000px) {
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      @media (max-width: $screen-sm) {
+        order: 1;
+      }
+
+      img {
+        width: 422px;
+        height: 590px;
+        object-fit: cover;
+
+        @media (max-width: 1000px) {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .rit {
+    margin-top: -50px;
+    margin-right: 550px;
+  }
+}
+
+.logo.fim {
+  @media (max-width: $screen-sm) {
+    margin-top: 64px;
+    height: 20px;
+
+    svg {
+      height: 50px;
+
+      &.inves {
+        margin-top: -28px;
+      }
     }
   }
 }

@@ -1,61 +1,65 @@
-.sixthSection{
+.sixthSection {
   background: #000;
   padding-top: 32px;
   padding-bottom: 400px;
-  
-  .centro{
+
+  .centro {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
     justify-content: center;
-  
-    .words{
+
+    .words {
       margin-bottom: 35px;
-  
-      .title{
+
+      .title {
         text-align: center;
-        h2{
+
+        h2 {
           color: #fff;
-          font-family: "Encode Sans",Sans-serif;
+          font-family: "Encode Sans", Sans-serif;
           font-size: 45px;
           font-weight: 700;
           line-height: .6em;
           margin-top: 10px;
         }
       }
-  
-      .paragrafo{
+
+      .paragrafo {
         text-align: center;
         margin-top: 15px;
-        p{
+
+        p {
           font-family: 'Courier New', Courier, monospace;
           color: #fff;
           font-size: 16px;
-          span{
+
+          span {
             color: #ff1865;
           }
         }
       }
     }
-  
-    .images{
+
+    .images {
       display: grid;
       align-items: center;
       justify-content: center;
       justify-items: center;
       grid-template-columns: 250px 250px 250px;
-      
+
       @media (max-width: $screen-xs) {
         grid-template-columns: 1fr 1fr;
       }
 
-      .box{
+
+      .box {
         img {
           width: 100%;
         }
-        
-        &.meio{
+
+        &.meio {
           @media (max-width: $screen-xs) {
             display: grid;
             grid-column-start: 1;
@@ -66,15 +70,15 @@
         }
       }
     }
-    
-    .words2{
+
+    .words2 {
       text-align: center;
       margin-top: 10px;
-    
-      .title{
-        h2{
+
+      .title {
+        h2 {
           color: #fff;
-          font-family: "Encode Sans",Sans-serif;
+          font-family: "Encode Sans", Sans-serif;
           font-size: 18px;
           font-weight: 600;
           margin-bottom: 30px;
@@ -83,20 +87,30 @@
 
       p {
         color: #fff;
-        font-family: "Encode Sans",Sans-serif;
+        font-family: "Encode Sans", Sans-serif;
         font-weight: 400;
         font-size: 16px;
       }
     }
 
-    .image2{
+    .image2 {
       display: flex;
       justify-content: center;
       align-items: center;
       justify-items: center;
+
+      .box {
+        img {
+          @media (max-width: $screen-sm) {
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+
     }
 
-    .words3{
+    .words3 {
       display: flex;
       flex-direction: column;
       justify-items: center;
@@ -106,21 +120,22 @@
       margin-top: 20px;
       width: 760px;
       margin-bottom: 30px;
-    
-      p{
+
+      p {
         color: #fff;
-        font-family: "Encode Sans",Sans-serif;
+        font-family: "Encode Sans", Sans-serif;
         font-size: 17px;
         font-weight: 700;
         letter-spacing: 0;
         margin-bottom: 10px;
-        span{
-         color: #ffd975; 
+
+        span {
+          color: #ffd975;
         }
       }
     }
 
-    .words4{
+    .words4 {
       display: flex;
       flex-direction: column;
       justify-items: center;
@@ -128,16 +143,16 @@
       align-items: center;
       text-align: center;
       margin-top: 25px;
-    
-      h2{
+
+      h2 {
         color: #fff;
-        font-family: "Encode Sans",Sans-serif;
+        font-family: "Encode Sans", Sans-serif;
         font-size: 40px;
         font-weight: 400;
         text-transform: uppercase;
         line-height: .98em;
-        
-        span{
+
+        span {
           color: #ffd975;
           font-weight: 600;
           font-size: 48px;
@@ -145,15 +160,15 @@
         }
       }
     }
-    
-    .linhaAmarela{
+
+    .linhaAmarela {
       margin-top: 25px;
       border: 2px solid;
       color: #ffd975;
       width: 460px;
     }
-    
-    .words5{
+
+    .words5 {
       display: flex;
       flex-direction: column;
       justify-items: center;
@@ -163,16 +178,17 @@
       margin-top: 20px;
       width: 760px;
       margin-bottom: 30px;
-    
-      p{
+
+      p {
         color: #fff;
-        font-family: "Encode Sans",Sans-serif;
+        font-family: "Encode Sans", Sans-serif;
         font-size: 17px;
         font-weight: 700;
         letter-spacing: 0;
         margin-bottom: 10px;
-        span{
-         color: #ffd975; 
+
+        span {
+          color: #ffd975;
         }
       }
     }

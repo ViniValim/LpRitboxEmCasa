@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="/dist/assets/styles/home.css">
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src= "/dist/assets/scripts/home.js"></script>
+  <script src="/dist/assets/scripts/home.js"></script>
   <title>Black Friday</title>
 </head>
 
@@ -77,34 +77,34 @@
       <div class="flow">
         <div class="carrosel" id="img">
           <!--Radio Buttons-->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <input type="radio" name="radio-btn" id="radio5">
-            <!--Radio Buttons-->
-            <div class="slide first-slide">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <input type="radio" name="radio-btn" id="radio5">
+          <!--Radio Buttons-->
+          <div class="slide first-slide">
             <img src="/dist/assets/images/2.png" alt="">
-            </div>
-            <div class="slide">
+          </div>
+          <div class="slide">
             <img src="/dist/assets/images/7.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="/dist/assets/images/11.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="/dist/assets/images/18.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="/dist/assets/images/21.png" alt="">
-            </div>
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-              <div class="auto-btn5"></div>
-            </div>
+          </div>
+          <div class="slide">
+            <img src="/dist/assets/images/11.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="/dist/assets/images/18.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="/dist/assets/images/21.png" alt="">
+          </div>
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+          </div>
         </div>
         <div class="manual-navigation">
           <label for="radio1" class="manual-btn"></label>
@@ -138,7 +138,7 @@
     setInterval(carrosel, 2800);
   </script> -->
 
-  <section class="third">
+  <!-- <section class="third">
     <svg>
       <use xlink:href="dist/assets/svg/sprite.svg#patter1"></use>
     </svg>
@@ -380,7 +380,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="evani">
     <div class="logo">
@@ -390,7 +390,7 @@
       <span>EVANI PEREIRA</span>
     </div>
     <div class="container">
-      <img src="/dist/assets/images/54.png" alt="" class="metodologia">
+      <img src="/dist/assets/images/54.png" alt="" class="evani-logo">
       <div class="content">
         <div class="left">
           <p><span>Master COACH RitBox</span> é uma das maiores autoridade em emagrecimento no Brasil.<span>Evani
@@ -403,7 +403,7 @@
         </div>
       </div>
     </div>
-    <div class="logo">
+    <div class="logo fim">
       <svg class="inves">
         <use xlink:href="dist/assets/svg/sprite.svg#patter1"></use>
       </svg>
@@ -414,7 +414,8 @@
     <div class="container">
       <div class="botao">
         <h3>Acesso anual por apenas <span>12x R$ 19,19</span></h3>
-        <a href="https://pay.hotmart.com/V9187282O?off=033xxw0y&checkoutMode=10&split=12&bid=1670966954026" target="_blank">
+        <a href="https://pay.hotmart.com/V9187282O?off=033xxw0y&checkoutMode=10&split=12&bid=1670966954026"
+          target="_blank">
           QUERO 1 ANO DE RESULTADO EM APENAS 2 MESES SE DIVERTINDO
         </a>
         <h3 class="menor">Receba imediatamente o seu acesso após a confirmação do pagamento.</h3>
@@ -632,8 +633,8 @@
 
     function carrosel1() {
       idy++;
-      if (idy > imgy.length - 12){
-        idy =0;
+      if (idy > imgy.length - 12) {
+        idy = 0;
       }
       imgsy.style.transform = `translateX(${-idy * 730}px)`;
 
