@@ -26,6 +26,9 @@
         margin-bottom: 20px;
         width: 100%;
         overflow: hidden;
+        @media (max-width: $screen-xs) {
+          height: 311px;
+        }
         input{
           display: none;
         }
@@ -74,6 +77,9 @@
           border-radius: 10px;
           cursor: pointer;
           transition: 1s;
+          @media (max-width: $screen-xs) {
+            display: none;
+          }
         }
         .navigation-auto{
           position: absolute;
@@ -107,6 +113,9 @@
         display: flex;
         justify-content: center;
         gap: 20px;
+        @media (max-width: $screen-xs) {
+          display: none;
+        }
         .manual-btn{
           border: 2px solid #f50b4d;
           padding: 5px;

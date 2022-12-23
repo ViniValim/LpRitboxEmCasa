@@ -7,6 +7,9 @@ footer {
     justify-content: center;
     justify-items: center;
     align-items: center;
+    @media (max-width: $screen-xs) {
+      width: 311px;
+    }
 
     .image {
       .box{
@@ -21,6 +24,9 @@ footer {
       flex-direction: column;
       gap: 40px;
       text-align: center;
+      @media (max-width: $screen-xs) {
+        width: 311px;
+      }
       .first1{
         display: flex;
         flex-direction: column;
@@ -28,12 +34,18 @@ footer {
         justify-content: center;
         justify-items: center;
         gap: 40px;
+        @media (max-width: $screen-xs) {
+          width: 311px;
+        }
         p{
           width: 810px;
           color: #fdc7ff;
           font-family: "Encode Sans",Sans-serif;
           font-weight: 400;
           font-size: 16px;
+          @media (max-width: $screen-xs) {
+            width: 311px;
+          }
         }
         h4{
           font-size: 16px;
